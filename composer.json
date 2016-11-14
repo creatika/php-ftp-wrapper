@@ -1,5 +1,5 @@
 {
-    "name": "touki/ftp",
+    "name": "nettic/touki-ftp",
     "description": "A fully object oriented library for PHP FTP functions",
     "license": "MIT",
     "authors": [
