@@ -48,6 +48,9 @@ class FileDownloader implements DownloaderInterface, DownloaderVotableInterface
      */
     public function vote($local, Filesystem $remote, array $options = array())
     {
+        if (is_resource($local))
+            return false;
+
         return
             ($remote instanceof File)
             && false === is_resource($local)
